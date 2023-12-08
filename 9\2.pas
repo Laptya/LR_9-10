@@ -18,8 +18,8 @@ if (a[i-1] < 0) then max2:=a[i-1];
 end;
 for i:=-1 to n do
 if (a[i-1] < 0) and (a[i-1] > max2) then begin max2:=a[i-1]; num3:=1; end;
-writeln('Mаксимальный элемент =', max,' ',num);
-writeln('Минимальный по модулю элемент =', min,' ',num2);
+writeln('Mаксимальный элемент = ', max,' ',num);
+writeln('Минимальный по модулю элемент = ', min,' ',num2);
 writeln('Максимальный отрицательный элемент = ',max2,' ',num3);
 end;
 begin
