@@ -8,7 +8,7 @@ i:integer;
 begin
 per:=0;
 for i:=1 to n do
-if a[i-1] < 0 then begin per:=a[i-1]: end:
+if a[i-1] < 0 then begin per:=a[i-1]; end;
 end;
 
 begin
