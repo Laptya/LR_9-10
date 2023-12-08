@@ -6,17 +6,17 @@ procedure bts();
 var
 num, num2, max, min, max2, num3, i: integer;
 begin
-max:= a[0]:
-num := 1:
+max:= a[0];
+num := 1;
 min:= a[0];
-num2 = 1;
-for i: 1 to n do
+num2 := 1;
+for i:= 1 to n do
 begin
-if a[i-1] > max then begin max:= a[i-1]; num:=i; end;
-if abs(a[i-1]) < abs (min) then begin min: =a[i-1]; num2:=i; end;
-if (a[i-1] < 0) then min:=a[i-1];
+if a[i-1] > max then begin max:= a[i-1]; num:= i; end;
+if abs(a[i-1]) < abs(min) then begin min:= a[i-1]; num2:=i; end;
+if (a[i-1] < 0) then max2:=a[i-1];
 end;
-for i:-1 to n do
+for i:=-1 to n do
 if (a[i-1] < 0) and (a[i-1] > max2) then begin max2:=a[i-1]; num3:=1; end;
 writeln('Mаксимальный элемент =', max,' ',num);
 writeln('Минимальный по модулю элемент =', min,' ',num2);
